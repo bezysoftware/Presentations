@@ -19,6 +19,7 @@
         public void Run()
         {
             var input = this.inputReader.ReadInput();
+
             while (!string.IsNullOrWhiteSpace(input))
             {
                 var result = this.calculator.Calculate(input);

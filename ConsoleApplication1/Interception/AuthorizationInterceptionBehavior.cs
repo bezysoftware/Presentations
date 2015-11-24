@@ -35,10 +35,5 @@
                 return true;
             }
         }
-
-        private string GetParameters(IMethodInvocation input)
-        {
-            return string.Join("\n---------\n", input.MethodBase.GetParameters().Select(parameter => string.Format("\nName: {0}, Value: {1}", parameter.Name, input.Arguments[parameter.Name])));
-        }
     }
 }
